@@ -3,7 +3,6 @@ import { MdSidenav } from '@angular/material';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription, Observable, Subject } from 'rxjs';
 import { NavigationService } from '../side-navigation/navigation.service';
-import { defaults, merge } from 'lodash';
 
 
 export interface HeaderConfigPartial {

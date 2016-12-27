@@ -53,11 +53,11 @@ var ModernMeanComponent = (function () {
 }());
 __decorate([
     ViewChild('leftnav'),
-    __metadata("design:type", typeof (_a = typeof MdSidenav !== "undefined" && MdSidenav) === "function" && _a || Object)
+    __metadata("design:type", MdSidenav)
 ], ModernMeanComponent.prototype, "leftnav", void 0);
 __decorate([
     ViewChild('rightnav'),
-    __metadata("design:type", typeof (_b = typeof MdSidenav !== "undefined" && MdSidenav) === "function" && _b || Object)
+    __metadata("design:type", MdSidenav)
 ], ModernMeanComponent.prototype, "rightnav", void 0);
 ModernMeanComponent = __decorate([
     Component({
@@ -65,8 +65,7 @@ ModernMeanComponent = __decorate([
         templateUrl: './modern-mean.component.html',
         styleUrls: ['./modern-mean.component.css']
     }),
-    __metadata("design:paramtypes", [typeof (_c = typeof Router !== "undefined" && Router) === "function" && _c || Object, NavigationService, typeof (_d = typeof ChangeDetectorRef /*, @Inject(MediaMonitor)  private _media*/ !== "undefined" && ChangeDetectorRef /*, @Inject(MediaMonitor)  private _media*/) === "function" && _d || Object])
+    __metadata("design:paramtypes", [Router, NavigationService, ChangeDetectorRef /*, @Inject(MediaMonitor)  private _media*/])
 ], ModernMeanComponent);
 export { ModernMeanComponent };
-var _a, _b, _c, _d;
 //# sourceMappingURL=/home/athroener/vscode/angular-base/modern-mean.component.js.map

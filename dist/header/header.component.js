@@ -76,8 +76,7 @@ HeaderComponent = __decorate([
         templateUrl: './header.component.html',
         styleUrls: ['./header.component.css']
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof ActivatedRoute !== "undefined" && ActivatedRoute) === "function" && _a || Object, NavigationService])
+    __metadata("design:paramtypes", [ActivatedRoute, NavigationService])
 ], HeaderComponent);
 export { HeaderComponent };
-var _a;
 //# sourceMappingURL=/home/athroener/vscode/angular-base/header/header.component.js.map

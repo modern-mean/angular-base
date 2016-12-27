@@ -4,7 +4,13 @@
   "description": "angular base",
   "main": "dist/modern-mean.module.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "build": "rm -rf ./dist && tsc",
+    "build:watch": "rm -rf ./dist && tsc --watch",
+    "release:patch": "npm run build && npm version patch",
+    "release:minor": "npm run build && npm version minor",
+    "release:major": "npm run build && npm version major",
+    "release:quick": "npm run build && git add -A && git commit -m 'Quick Release Patch' && npm version patch"
   },
   "repository": {
     "type": "git",

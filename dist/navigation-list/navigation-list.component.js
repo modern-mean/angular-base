@@ -53,8 +53,7 @@ NavigationListComponent = __decorate([
             slide()
         ]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof Router !== "undefined" && Router) === "function" && _a || Object])
+    __metadata("design:paramtypes", [Router])
 ], NavigationListComponent);
 export { NavigationListComponent };
-var _a;
 //# sourceMappingURL=/home/athroener/vscode/angular-base/navigation-list/navigation-list.component.js.map
