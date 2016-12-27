@@ -1,6 +1,6 @@
 {
   "name": "@modern-mean/angular-base",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "angular base",
   "main": "index.js",
   "private": false,
