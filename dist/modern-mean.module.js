@@ -21,7 +21,6 @@ import { RouterModule } from '@angular/router';
 import { AllRoutes } from './modern-mean.routes';
 //Material Setup
 import { MaterialModule } from '@angular/material';
-import 'hammerjs';
 import { NavigationListComponent } from './navigation-list/navigation-list.component';
 import { NavigationRoutePipe } from './navigation-list/navigation-route.pipe';
 import { NavigationRoutesPipe } from './navigation-list/navigation-routes.pipe';

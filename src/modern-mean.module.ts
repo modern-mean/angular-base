@@ -16,7 +16,6 @@ import { AllRoutes } from './modern-mean.routes';
 
 //Material Setup
 import { MaterialModule } from '@angular/material';
-import 'hammerjs';
 import { NavigationListComponent } from './navigation-list/navigation-list.component';
 
 
