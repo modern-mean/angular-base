@@ -1,6 +1,6 @@
 {
   "name": "@modern-mean/angular-base",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "angular base",
   "main": "dist/modern-mean.module.js",
   "private": false,
