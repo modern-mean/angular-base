@@ -1,0 +1,39 @@
+{
+  "name": "@modern-mean/angular-base",
+  "version": "0.0.9",
+  "description": "angular base",
+  "main": "bundles/@modern-mean/angular-base.umd.js",
+  "private": false,
+  "scripts": {
+    "test": "npm test",
+    "postversion": "git push && git push --tags && npm publish --access public",
+    "release:patch": "npm run build && npm version patch",
+    "release:minor": "npm run build && npm version minor",
+    "release:major": "npm run build && npm version major",
+    "release:quick": "npm run build && git add -A && git commit -m 'Quick Release Patch' && npm version patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modern-mean/angular-base.git"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "Andrew Throener",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/modern-mean/angular-base/issues"
+  },
+  "homepage": "https://github.com/modern-mean/angular-base#readme",
+  "dependencies": {
+    "@angular/flex-layout": "^2.0.0-beta.1",
+    "@angular/material": "^2.0.0-alpha.11"
+  },
+  "peerDependencies": {
+    "@angular/common": "^2.2.4",
+    "@angular/core": "^2.2.4",
+    "rxjs": "^5.0.0-rc.4"
+  },
+  "module": "./index.js",
+  "typings": "index.d.ts"
+}
