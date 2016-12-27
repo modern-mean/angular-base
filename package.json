@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "angular base",
   "main": "dist/modern-mean.module.js",
+  "private": false,
   "scripts": {
     "test": "npm test",
     "build": "rm -rf ./dist && tsc",
