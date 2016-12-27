@@ -12,6 +12,7 @@ import { MaterialModule } from '@angular/material';
 import { NavigationListComponent } from './navigation-list/navigation-list.component';
 import { NavigationRoutePipe } from './navigation-list/navigation-route.pipe';
 import { NavigationRoutesPipe } from './navigation-list/navigation-routes.pipe';
+import 'hammerjs';
 export var ModernMeanModule = (function () {
     function ModernMeanModule() {
     }

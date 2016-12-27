@@ -1,6 +1,6 @@
 {
   "name": "@modern-mean/angular-base",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "angular base",
   "main": "bundles/@modern-mean/angular-base.umd.js",
   "private": false,
@@ -27,7 +27,8 @@
   "homepage": "https://github.com/modern-mean/angular-base#readme",
   "dependencies": {
     "@angular/flex-layout": "^2.0.0-beta.1",
-    "@angular/material": "^2.0.0-alpha.11"
+    "@angular/material": "^2.0.0-alpha.11",
+    "hammerjs": "^2.0.8"
   },
   "peerDependencies": {
     "@angular/common": "^2.2.4",

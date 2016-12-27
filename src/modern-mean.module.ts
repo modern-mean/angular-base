@@ -22,7 +22,7 @@ import { NavigationListComponent } from './navigation-list/navigation-list.compo
 import { NavigationRoutePipe } from './navigation-list/navigation-route.pipe';
 import { NavigationRoutesPipe } from './navigation-list/navigation-routes.pipe';
 
-
+import 'hammerjs';
 
 @NgModule({
   imports:      [ CommonModule, MaterialModule.forRoot(), RouterModule.forRoot(AllRoutes) ],
