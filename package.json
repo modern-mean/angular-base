@@ -1,0 +1,37 @@
+{
+  "name": "@modern-mean/angular-base",
+  "version": "0.0.1",
+  "description": "angular base",
+  "main": "dist/modern-mean.module.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modern-mean/angular-base.git"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "Andrew Throener",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/modern-mean/angular-base/issues"
+  },
+  "homepage": "https://github.com/modern-mean/angular-base#readme",
+  "dependencies": {
+    "@angular/flex-layout": "^2.0.0-beta.1",
+    "@angular/material": "^2.0.0-alpha.11"
+  },
+  "devDependencies": {
+    "@angular/common": "~2.2.3",
+    "@angular/compiler": "~2.2.3",
+    "@angular/core": "~2.2.3",
+    "@angular/forms": "~2.2.3",
+    "@angular/http": "~2.2.3",
+    "@angular/platform-browser": "~2.2.3",
+    "@angular/platform-browser-dynamic": "~2.2.3",
+    "@angular/router": "~3.2.3",
+    "@types/node": "^6.0.42"
+  }
+}

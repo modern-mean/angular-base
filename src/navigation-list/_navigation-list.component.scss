@@ -1,0 +1,15 @@
+@import '~@angular/material/core/theming/all-theme';
+
+@include md-core();
+
+@mixin modern-mean-navigation($theme) {
+  // Extract whichever individual palettes you need from the theme.
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  // Use md-color to extract individual colors from a palette as necessary.
+  .active {
+    background-color: md-color($accent, 200);
+    color: md-color($accent, default-contrast);
+  }
+}

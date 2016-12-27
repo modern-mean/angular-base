@@ -1,0 +1,21 @@
+<md-toolbar>
+
+  <button *ngIf="!_leftnav?.opened" md-mini-fab (click)="_leftnav.toggle()"><md-icon>{{_config.leftButtonIcon}}</md-icon></button>
+
+  <span *ngIf="_config.titleShow" fx-flex style="text-align:center">
+    {{_config.title}}
+  </span>
+
+  <!-- TODO
+  //Make Breadcrumbs from md-chip when available
+  https://github.com/angular/material2
+  <md-chip-list>
+    <md-chip>Chip 1</md-chip>
+    <md-chip>Chip 2</md-chip>
+    <md-chip>Chip 3</md-chip>
+  </md-chip-list>
+  -->
+
+  <button *ngIf="_config.rightButtonShow" md-mini-fab (click)="_rightnav.toggle()"><md-icon>{{_config.rightButtonIcon}}</md-icon></button>
+
+</md-toolbar>

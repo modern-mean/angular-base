@@ -1,0 +1,26 @@
+<ng-container *ngIf="_activeRoute">
+  <md-nav-list [@slide]="_state" (@slide.done)="animationDone($event)">
+
+    <ng-container *ngIf="_activeRoute.children.length === 0">
+      <md-list-item *ngFor="let route of _rootRoutes | navigationRoutes" routerLink="{{route.path}}" routerLinkActive="active">
+        <a md-line ><span>{{route.data.navigation.display}}</span></a>
+        <md-icon *ngIf="route.children && route.children.length > 0">keyboard_arrow_right</md-icon>
+        <md-icon *ngIf="!route.children || route.children.length === 0">{{route.data.navigation.icon}}</md-icon>
+      </md-list-item>
+    </ng-container>
+
+
+    <ng-container *ngIf="_activeRoute.children.length !== 0">
+      <md-list-item >
+        <button md-icon-button routerLink="../"><md-icon>keyboard_arrow_left</md-icon></button>
+        <button md-icon-button routerLink="/home"><md-icon>home</md-icon></button>
+      </md-list-item>
+      <md-list-item *ngFor="let route of _activeRoute.children" [routerLink]="['ok']" routerLinkActive="active">
+        <a md-line ><span>{{route.data.navigation.display}}</span></a>
+        <md-icon *ngIf="route.children && route.children.length > 0">keyboard_arrow_right</md-icon>
+        <md-icon *ngIf="!route.children || route.children.length === 0">{{route.data.navigation.icon}}</md-icon>
+      </md-list-item>
+    </ng-container>
+  </md-nav-list>
+</ng-container>
+

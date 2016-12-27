@@ -1,0 +1,19 @@
+<md-sidenav-layout>
+  <md-sidenav #leftnav [opened]="_navOpened" [mode]="_navMode">
+    <md-toolbar color="primary">
+      <span>My Website Nav Drawer</span>
+      <button md-icon-button (click)="leftnav.close()"><md-icon><i class="material-icons">keyboard_arrow_left</i></md-icon></button>
+    </md-toolbar>
+    <modern-mean-navigation-list></modern-mean-navigation-list>
+  </md-sidenav>
+
+  <md-sidenav #rightnav align="end">
+    <md-toolbar color="accent">
+      Right Navigation
+    </md-toolbar>
+  </md-sidenav>
+
+  <router-outlet></router-outlet>
+
+</md-sidenav-layout>
+<modern-mean-footer></modern-mean-footer>
