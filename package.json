@@ -8,6 +8,7 @@
     "test": "npm test",
     "build": "rm -rf ./dist && tsc",
     "build:watch": "rm -rf ./dist && tsc --watch",
+    "postversion": "git push && git push --tags && npm publish --access public",
     "release:patch": "npm run build && npm version patch",
     "release:minor": "npm run build && npm version minor",
     "release:major": "npm run build && npm version major",
